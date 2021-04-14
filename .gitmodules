@@ -1,0 +1,3 @@
+[submodule "coha-tracking-client"]
+	path = coha-tracking-client
+	url = https://coha-it@github.com/coha-it/coha-tracking-client.git
