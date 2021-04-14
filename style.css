@@ -53,43 +53,61 @@ body .seopress-user-consent {
 }
 
 /* WooCommerce */
-.woocommerce-page.woocommerce-checkout .woocommerce-customer-details address,
-.woocommerce-page.woocommerce-checkout .woocommerce-order h2.woocommerce-column__title, .woocommerce-page.woocommerce-checkout .woocommerce-order h2.woocommerce-order-details__title, .woocommerce.woocommerce-checkout .woocommerce-order h2.woocommerce-column__title, .woocommerce.woocommerce-checkout .woocommerce-order h2.woocommerce-order-details__title {
+html .woocommerce-page.woocommerce-checkout .woocommerce-customer-details address,
+html .woocommerce-page.woocommerce-checkout .woocommerce-order h2.woocommerce-column__title,
+html .woocommerce-page.woocommerce-checkout .woocommerce-order h2.woocommerce-order-details__title,
+html .woocommerce.woocommerce-checkout .woocommerce-order h2.woocommerce-column__title,
+html .woocommerce.woocommerce-checkout .woocommerce-order h2.woocommerce-order-details__title {
     background: #1d1d1d;
 }
 
-.woocommerce-checkout .shop_table {
+html .woocommerce-checkout .shop_table {
     background: #171717;
 }
 
 
-.woocommerce-page.woocommerce-checkout .woocommerce-customer-details address,
-.woocommerce-page.woocommerce-checkout .woocommerce-order h2.woocommerce-column__title, .woocommerce-page.woocommerce-checkout .woocommerce-order h2.woocommerce-order-details__title, .woocommerce.woocommerce-checkout .woocommerce-order h2.woocommerce-column__title, .woocommerce.woocommerce-checkout .woocommerce-order h2.woocommerce-order-details__title,
-.woocommerce table.shop_table,
-.woocommerce-page.woocommerce-checkout .woocommerce-order table.shop_table td, .woocommerce-page.woocommerce-checkout .woocommerce-order table.shop_table th, .woocommerce.woocommerce-checkout .woocommerce-order table.shop_table td, .woocommerce.woocommerce-checkout .woocommerce-order table.shop_table th {
+html .woocommerce-page.woocommerce-checkout .woocommerce-customer-details address,
+html .woocommerce-page.woocommerce-checkout .woocommerce-order h2.woocommerce-column__title, .woocommerce-page.woocommerce-checkout .woocommerce-order h2.woocommerce-order-details__title, .woocommerce.woocommerce-checkout .woocommerce-order h2.woocommerce-column__title, .woocommerce.woocommerce-checkout .woocommerce-order h2.woocommerce-order-details__title,
+html .woocommerce table.shop_table,
+html .woocommerce-page.woocommerce-checkout .woocommerce-order table.shop_table td, .woocommerce-page.woocommerce-checkout .woocommerce-order table.shop_table th, .woocommerce.woocommerce-checkout .woocommerce-order table.shop_table td, .woocommerce.woocommerce-checkout .woocommerce-order table.shop_table th {
     border-color: #333;
 }
 
 
-.woocommerce-error, .woocommerce-info, .woocommerce-message {
+html .woocommerce-error,
+html .woocommerce-info,
+html .woocommerce-message {
     background: #252525;
     color: white;
 }
 
-.woocommerce-cart .cart-collaterals .cart_totals>h2,
-.woocommerce-cart .cart-collaterals .cross-sells>h2,
-.woocommerce table.shop_table thead, .woocommerce-page table.shop_table thead {
+html .woocommerce-cart .cart-collaterals .cart_totals>h2,
+html .woocommerce-cart .cart-collaterals .cross-sells>h2,
+html .woocommerce table.shop_table thead,
+html .woocommerce-page table.shop_table thead {
     background-color: #171717;
 }
 
-.woocommerce-cart .cart-collaterals .cart_totals, .woocommerce-cart .cart-collaterals .cross-sells {
+html .woocommerce-cart .cart-collaterals .cart_totals,
+html .woocommerce-cart .cart-collaterals .cross-sells {
     border-color: #333;
 }
 
-#add_payment_method .cart-collaterals .cart_totals tr td, #add_payment_method .cart-collaterals .cart_totals tr th, .woocommerce-cart .cart-collaterals .cart_totals tr td, .woocommerce-cart .cart-collaterals .cart_totals tr th, .woocommerce-checkout .cart-collaterals .cart_totals tr td, .woocommerce-checkout .cart-collaterals .cart_totals tr th,
-.woocommerce-cart .cart-collaterals .cart_totals>h2, .woocommerce-cart .cart-collaterals .cross-sells>h2,
-.woocommerce table.shop_table td, .woocommerce-page table.shop_table td {
+html #add_payment_method .cart-collaterals .cart_totals tr td,
+html #add_payment_method .cart-collaterals .cart_totals tr th,
+html .woocommerce-cart .cart-collaterals .cart_totals tr td,
+html .woocommerce-cart .cart-collaterals .cart_totals tr th,
+html .woocommerce-checkout .cart-collaterals .cart_totals tr td,
+html .woocommerce-checkout .cart-collaterals .cart_totals tr th,
+html .woocommerce-cart .cart-collaterals .cart_totals>h2,
+html .woocommerce-cart .cart-collaterals .cross-sells>h2,
+html .woocommerce table.shop_table td, .woocommerce-page table.shop_table td {
     border-color: #3c3c3c;
+}
+
+html .woocommerce-checkout .shop_table {
+    background-color: inherit;
+    background-color: rgb(12 12 12 / 14%);
 }
 
 
@@ -446,8 +464,8 @@ a.showcoupon {
 @media screen and (max-width: 1250px) and (min-width: 1000px) {
     .elementor-nav-menu .menu-item .elementor-item {
         font-size: 16px !important;
-        padding-right: 1.25vw;
-        padding-left: 1.25vw;
+        padding-right: 1.25vw !important;
+        padding-left: 1.25vw !important;
     }
 }
 
@@ -472,5 +490,7 @@ a.showcoupon {
 .comment-notes {
 	color: black;
 }
+
+
 
 
