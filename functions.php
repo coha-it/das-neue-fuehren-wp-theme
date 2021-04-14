@@ -193,3 +193,9 @@ add_action('wp_enqueue_scripts', 'dnf_enqueue_custom_js');
 function dnf_enqueue_custom_js() {
     wp_enqueue_script('custom', get_stylesheet_directory_uri().'/scripts/custom.js');
 }
+
+// Remove Fonts
+add_filter( 'elementor/frontend/print_google_fonts', '__return_false' );
+add_filter( 'astra_google_fonts', '__return_empty_array' );
+add_filter( 'astra_google_fonts_selected', '__return_empty_array' );
+
