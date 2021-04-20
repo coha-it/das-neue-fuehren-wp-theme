@@ -148,7 +148,7 @@ add_action( 'wp_loaded', 'change_wc_gzd_checkout'  );
  * 0 = Very Weak / Anything
  */
 function coha_change_password_strength ($strength) {
-	return 2;
+	return 0;
 }
 add_filter( 'woocommerce_min_password_strength', 'coha_change_password_strength' );
 
@@ -159,7 +159,7 @@ function coha_strength_meter_settings( $params, $handle)
 	if( $handle === 'wc-password-strength-meter' )
 	{
 		$params = array_merge( $params, array(
-			'min_password_strength' => 2,
+			'min_password_strength' => 0,
 			'i18n_password_error' => 'Für ein sicheres Konto bitte ein stärkeres Passwort vergeben',
 			'i18n_password_hint' => 'Bitte vergeben Sie ein Passwort mit einer <strong>Mindestlänge von 7 Zeichen</strong> und verwenden Sie eine Mischung aus <strong>GROSSBUCHSTABEN</strong> und <strong>kleinbuchstaben</strong>, <strong>Nummern</strong>, und <strong>Symbolen</strong> (zum Beispiel: <strong> ! " ? $ % ^ & </strong>).'
 		) );
