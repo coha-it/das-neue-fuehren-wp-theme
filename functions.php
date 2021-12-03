@@ -50,6 +50,7 @@ function coha_disable_by_cart_value( $available_gateways ) {
 
 	if ( $cart_total > $stripe_maximum ) {
 		unset( $available_gateways['stripe'] );
+		unset( $available_gateways['stripe_sepa'] );
 	}
 
 	//var_dump($available_gateways);
