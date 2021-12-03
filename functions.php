@@ -40,10 +40,20 @@ function wcs_woo_remove_reviews_tab($tabs) {
 add_filter( 'woocommerce_available_payment_gateways', 'coha_disable_by_cart_value' );
 
 function coha_disable_by_cart_value( $available_gateways ) {
-        $maximum = 500;
-        if ( WC()->cart->total > $maximum ) {
+	$cart_total = WC()->cart->total;
+        $paypal_maximum = 500;
+	$stripe_maximum = 999;
+
+        if ( $cart_total > $paypal_maximum ) {
                 unset( $available_gateways['paypal'] );
         }
+
+	if ( $cart_total > $stripe_maximum ) {
+		unset( $available_gateways['stripe'] );
+	}
+
+	//var_dump($available_gateways);
+
         return $available_gateways;
 }
 
